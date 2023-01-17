@@ -1,0 +1,32 @@
+@import url('font/IBMPlexSerif.css');
+
+body {
+    background: center/cover url('img/the craft.png');
+    background-color: #703262;
+    margin: 40px 20px;
+    font-size: 13pt;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.page {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff88;
+}
+
+.title {
+    font-size: 2.5em;
+    font-style: italic;
+    display: inline;
+}
+
+a {
+    color: #703262;
+    text-decoration: none;
+}
+
+.buttons {
+    margin: 0 auto;
+    text-align: center;
+}
