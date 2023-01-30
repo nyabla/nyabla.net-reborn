@@ -1,7 +1,7 @@
 @import url('font/IBMPlexSerif.css');
 
 body {
-    background: center/cover url('img/the craft.png');
+    background: center/cover url('img/the craft.png') fixed;
     background-color: #703262;
     margin: 40px 20px;
     font-size: 13pt;
