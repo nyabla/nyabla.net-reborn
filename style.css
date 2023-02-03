@@ -19,6 +19,10 @@ body {
     text-align: center;
 }
 
+.fourohfour img {
+    width: 100%;
+}
+
 #webring {
     width: 100%;
     height: 85px;
