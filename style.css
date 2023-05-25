@@ -4,17 +4,28 @@
     --cyan: #4CC9F0;
     --purple: #C200FB;
     --magenta: #F81C78;
+    --background: white;
+    --foreground: black;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: black;
+        --foreground: white;
+    }
 }
 
 ::selection {
-    color: white;
-    background-color: black;
+    color: var(--background);
+    background-color: var(--foreground);
 }
 
 body {
     font-family: 'Inter', Helvetica, Arial, sans-serif;
     font-size: 16px;
     margin: 0;
+    color: var(--foreground);
+    background-color: var(--background);
 }
 /*
 @supports (font-variation-settings: normal) {
@@ -22,7 +33,7 @@ body {
 }*/
 
 a {
-    color: black;
+    color: var(--foreground);
 }
 
 .page {
