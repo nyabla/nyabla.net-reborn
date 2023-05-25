@@ -39,7 +39,7 @@ a {
     grid-area: a;
     height: 100%;
     width: 100%;
-    background-image: url('img/tile.svg');
+    background-image: url('/img/tile.svg');
     background-size: 48px;
 }
 
