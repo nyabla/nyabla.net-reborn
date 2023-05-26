@@ -59,7 +59,7 @@ a {
     margin: 32px 16px;
 }
 
-nav {
+header {
     display: flex;
     flex-direction: column;
     gap: 24px;
