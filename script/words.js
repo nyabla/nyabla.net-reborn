@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', changeWord)
 const wordEl = document.querySelector('.word')
 wordEl.addEventListener('click', changeWord)
 
-function changeWord() {
+function changeWord(e) {
     wordEl.textContent = words[wordIndex]
     wordIndex = (wordIndex + 1) % words.length
+    e.preventDefault()
 }
