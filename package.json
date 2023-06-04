@@ -1,0 +1,24 @@
+{
+  "name": "nyabla.net",
+  "version": "1.0.0",
+  "description": "new superior nyabla.net dropped. plain html. plain css. a little bit quirky.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyabla/nyabla.net-reborn.git"
+  },
+  "keywords": [],
+  "author": "nela [nyabla.net]",
+  "license": "UNLICENSED",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/nyabla/nyabla.net-reborn/issues"
+  },
+  "homepage": "https://www.nyabla.net/",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

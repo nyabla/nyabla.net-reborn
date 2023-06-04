@@ -66,11 +66,21 @@ header {
     margin-left: 24px;
 }
 
-.profile {
+nav a {
+    color: var(--purple);
+}
+
+.profile, .banner {
     display: flex;
     flex-direction: row;
     gap: 24px;
     align-items: center;
+}
+
+.banner svg {
+    width: 64px;
+    height: 64px;
+    fill: var(--magenta);
 }
 
 .portrait {
@@ -80,7 +90,7 @@ header {
     border-radius: 50%;
 }
 
-.profile__text {
+.profile__text, .banner__text {
     font-weight: 900;
     font-size: 48px;
     line-height: 48px;
