@@ -1,0 +1,33 @@
+---
+layout: index_layout.njk
+title: nelz
+---
+
+hello! i am an undergraduate robotics student and a bit of a nerd.
+i am in love with [fable](https://fablesbestiary.neocities.org/)
+
+i am interested in a lot of different things, here's a (non-exhuastive, alphabetised)
+list for your enjoyment.
+
+- art and craft – i dabble in watercolours and drawing and pastels and whittling
+  and crocheting. fun ways to spend time
+- design – i really like graphic design. i especially love print design. the
+  satisfaction of creating something and then seeing it in print is priceless.
+  i also like typography and try to think of my own fonts! (only on paper though)
+- drugs – im interested in the legislation around drugs and the human drive to
+  alter your own consciousness
+- electronics – duh im a robotics student. i like making circuits! it's very fun
+  to design something for a purpose and then it does the thing!
+- mathematics – i think proofs are pretty and satisfying. the abstract is a
+  lovely place to reside
+- music – i play piano and pipe organ and "play" the recorder, ukulele, melodica,
+  [venova](https://uk.yamaha.com/en/products/musical_instruments/winds/casual_wind_instruments/venova/),
+  oboe, you get the idea. I like jazz, rock, romantic (as in the period),
+  ambient, medieval (and historical in general), and experimental stuff.
+  I'm wanting to make myself a pair of [auli](https://yewtu.be/eWwtNO168kI)
+- mycology – i think mushrooms are very cool and i like hunting for, and then
+  eating them! this is an extension of my love for being able to identify living
+  things and the fact that there is so much to discover about them
+- mythology – i love learning about ancient cultures, religions, and folklore by
+  exploring myths
+- programming – i like trying out new languages and making little trinkets.
