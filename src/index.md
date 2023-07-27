@@ -1,5 +1,5 @@
 ---
-layout: index_layout.njk
+layout: index_layout.liquid
 title: nelz
 ---
 
