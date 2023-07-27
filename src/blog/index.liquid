@@ -2,7 +2,25 @@
 layout: blog_layout.liquid
 title: nelz blog
 ---
+<link rel="stylesheet" href="/post-block.css">
 
-<p>
-    welcome to my blog! it will have things on it probably
-</p>
+<h1>
+    recent posts
+</h1>
+
+{% if collections.post == null %}
+    <p><i>no posts :(</i></p>
+{% else %}
+    <ul>
+        {% for post in collections.post %}
+            <a href="{{ post.url }}">
+                <li>
+                    <h2>{{ post.data.title }}</h2>
+                    <p>last updated: {{ post.date }}</p>
+                </li>
+            </a>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+
