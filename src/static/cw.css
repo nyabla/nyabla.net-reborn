@@ -1,0 +1,13 @@
+.cw summary {
+    font-weight: bold;
+}
+
+.cw-container {
+    background-color: #F81C7844;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 16px;
+}
