@@ -1,18 +1,14 @@
-ul {
-    padding: 0;
-    list-style: none;
-}
-
-li {
+article {
     padding: 16px;
     border-radius: 8px;
-    background-color: color-mix(in srgb, var(--purple), rgb(none none none / 0%) 60%);
+    background-color: color-mix(in srgb, var(--cyan), rgb(none none none / 0%) 60%);
+    margin: 8px 0;
 }
 
-li h2 {
-    margin-top: 0;
+article * {
+    margin: 4px 0;
 }
 
-ul a {
-    text-decoration: none;
+.updated {
+    font-style: italic;
 }

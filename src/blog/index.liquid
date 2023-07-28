@@ -5,22 +5,44 @@ title: nelz blog
 <link rel="stylesheet" href="/post-block.css">
 
 <h1>
-    recent posts
+  recent posts
 </h1>
 
-{% if collections.post == null %}
-    <p><i>no posts :(</i></p>
+{% if collections.posts == 0 %}
+  <p>
+    <i>no posts :(</i>
+  </p>
 {% else %}
-    <ul>
-        {% for post in collections.post %}
-            <a href="{{ post.url }}">
-                <li>
-                    <h2>{{ post.data.title }}</h2>
-                    <p>last updated: {{ post.date }}</p>
-                </li>
-            </a>
-        {% endfor %}
-    </ul>
+  <div class="posts">
+    {% assign posts = collections.posts | reverse %}
+    {% for post in posts %}
+      <article>
+        <h2 class="post-title">
+          <a href="{{post.url}}">{{ post.data.title }}</a>
+        </h2>
+        {% assign post_git_created = post | git_created %}
+        <p>
+          <i>last updated: {% date post.date %}</i>
+          |
+          <i>created: {% date post_git_created %}</i>
+        </p>
+
+        {% if post.data.tags.length > 1 %}
+          {% assign tags = post.data.tags | sort_natural %}
+          <p>tags:</p>
+          <ul class="taglist">
+            {% for tag in tags %}
+              <li>
+                <a href="/blog/tags/{{ tag | slugify }}">{{ tag }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        {% if post.data.summary != null %}
+          <p class="summary">{{ post.data.summary }}</p>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
 {% endif %}
-
-
