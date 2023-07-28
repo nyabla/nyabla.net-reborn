@@ -20,5 +20,8 @@
   "homepage": "https://www.nyabla.net/",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "cross-spawn": "^7.0.3"
   }
 }
