@@ -1,3 +1,5 @@
+const DateGitFirstAdded = require("./util/DateGitFirstAdded")
+
 module.exports = function(eleventyConfig) {
     // Output directory: _site
 
@@ -9,6 +11,12 @@ module.exports = function(eleventyConfig) {
         const formatted = date.toISOString().slice(0, 10)
         const content = `<time datetime="${formatted}">${formatted}</time>`
         return content
+    })
+
+    // get page creation date filter
+    eleventyConfig.addFilter("git_created", (page) => {
+        console.log(page.inputPath)
+        return DateGitFirstAdded(page.inputPath)
     })
 
     // collection for posts
