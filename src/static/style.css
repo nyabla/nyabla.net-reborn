@@ -139,7 +139,7 @@ nav a {
     fill-opacity: 0.5;
 }
 
-footer {
+footer.box {
     border: solid 8px var(--magenta);
     border-radius: 16px;
     padding: 12px;
