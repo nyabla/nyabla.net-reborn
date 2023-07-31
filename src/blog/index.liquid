@@ -27,18 +27,6 @@ title: nelz blog
           <i>created: {% date post_git_created %}</i>
         </p>
 
-        {% if post.data.tags.length > 1 %}
-          {% assign tags = post.data.tags | sort_natural %}
-          <p>tags:</p>
-          <ul class="taglist">
-            {% for tag in tags %}
-              <li>
-                <a href="/blog/tags/{{ tag | slugify }}">{{ tag }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-
         {% if post.data.summary != null %}
           <p class="summary">{{ post.data.summary }}</p>
         {% endif %}
