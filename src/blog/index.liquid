@@ -20,11 +20,10 @@ title: nelz blog
         <h2 class="post-title">
           <a href="{{post.url}}">{{ post.data.title }}</a>
         </h2>
-        {% assign post_git_created = post | git_created %}
         <p>
           <i>last updated: {% date post.date %}</i>
           |
-          <i>created: {% date post_git_created %}</i>
+          <i>created: {% date post.data.dateCreated %}</i>
         </p>
 
         {% if post.data.summary != null %}
