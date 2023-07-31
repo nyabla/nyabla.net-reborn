@@ -1,0 +1,35 @@
+---
+layout: blog_layout.liquid
+title: nelz blog
+---
+<link rel="stylesheet" href="/post-block.css">
+
+<h1>
+  recent posts
+</h1>
+
+{% if collections.posts.length == 0 %}
+  <p>
+    <i>no posts :(</i>
+  </p>
+{% else %}
+  <div class="posts">
+    {% assign posts = collections.posts | reverse %}
+    {% for post in posts %}
+      <article>
+        <h2 class="post-title">
+          <a href="{{post.url}}">{{ post.data.title }}</a>
+        </h2>
+        <p>
+          <i>last updated: {% date post.date %}</i>
+          |
+          <i>created: {% date post.data.dateCreated %}</i>
+        </p>
+
+        {% if post.data.summary != null %}
+          <p class="summary">{{ post.data.summary }}</p>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+{% endif %}

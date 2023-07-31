@@ -1,0 +1,33 @@
+---
+layout: blog_layout.liquid
+permalink: "/blog/{{ title | slugify }}/"
+---
+<link rel="stylesheet" href="/cw.css">
+
+<h1>{{ title }}</h1>
+<p>last updated: {% date page.date %} | created: {% date dateCreated %}</p>
+
+{% if content_warnings %}
+  <div class="cw-container">
+    <img
+      class="cw-icon"
+      src="/img/warning.svg"
+      alt="">
+
+    <details class="cw">
+      <summary>content warnings</summary>
+      <ul>
+        {% for cw in content_warnings %}
+          <li>
+            {{ cw.brief }}
+            {% if cw.explanation %}
+              &mdash; {{ cw.explanation }}
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </details>
+  </div>
+{% endif %}
+
+{{ content }}

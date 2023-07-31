@@ -1,0 +1,60 @@
+---
+permalink: blog/atom.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>nyabla.net - nelz blog</title>
+  <link href="https://www.nyabla.net/blog/atom.xml" rel="self" />
+  <link href="https://www.nyabla.net/blog" />
+  <id>https://www.nyabla.net/blog</id>
+
+  {% if collections.posts.length > 0 %}
+    {% assign last_updated = collections.posts[0].date %}
+    <updated>{% iso_date last_updated %}</updated>
+
+    {% for post in collections.posts %}
+      <entry>
+        <title>{{ post.data.title }}</title>
+        <link href="https://www.nyabla.net{{ post.url }}" />
+
+        <published>{% iso_date post.data.dateCreated %}</published>
+
+        {% if post_git_created != post.date %}
+          <updated>{% iso_date post.date %}</updated>
+        {% endif %}
+
+        {% if post.data.summary %}
+          <summary>{{ post.data.summary }}</summary>
+        {% endif %}
+
+        <content type="xhtml">
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <h1>{{ post.title }}</h1>
+            {% if post.data.content_warnings %}
+              <p>
+                <b>content warnings</b>
+              </p>
+              <ul>
+                {% for cw in post.data.content_warnings %}
+                  <li>{{ cw.brief }}
+                    {% if cw.explanation %}
+                      &mdash; {{ cw.explanation }}
+                    {% endif %}
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+
+            {{ post.content }}
+          </div>
+        </content>
+
+        <author>
+          <name>nela</name>
+          <id>https://www.nyabla.net/</id>
+        </author>
+      </entry>
+    {% endfor %}
+  {% endif %}
+</feed>

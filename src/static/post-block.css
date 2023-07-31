@@ -1,0 +1,14 @@
+article {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: color-mix(in srgb, var(--cyan), rgb(none none none / 0%) 60%);
+    margin: 8px 0;
+}
+
+article * {
+    margin: 4px 0;
+}
+
+.updated {
+    font-style: italic;
+}

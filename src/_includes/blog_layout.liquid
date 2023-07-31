@@ -1,6 +1,5 @@
 ---
-layout: base.njk
-title: nelz blog
+layout: base.liquid
 ---
 
 <header>
@@ -10,12 +9,12 @@ title: nelz blog
     </section>
 
     <nav>
-        <a href="/">↵ go back</a>
+        <a href="../">↵ go back</a>
     </nav>
 </header>
 
 <main>
-    <p>
-        welcome to my blog! it will have things on it probably
-    </p>
+    {{ content }}
 </main>
+
+<link href="atom.xml" type="application/atom+xml" rel="alternate" title="blog atom feed" />
