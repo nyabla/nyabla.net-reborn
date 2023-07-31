@@ -4,7 +4,7 @@ permalink: "/blog/{{ title | slugify }}/"
 ---
 <link rel="stylesheet" href="/cw.css">
 
-<h1>{{ title }}</h2>
+<h1>{{ title }}</h1>
 <p>last updated: {% date page.date %} | created: {% date dateCreated %}</p>
 
 {% if content_warnings %}
