@@ -1,0 +1,18 @@
+a.feed::before {
+    content: url('/img/feed.svg');
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    padding-right: 12px;
+    vertical-align: -8px;
+}
+
+a.feed {
+    color: var(--purple);
+}
+
+footer {
+    margin: 24px 0;
+    padding: 8px 0;
+    border-top: 2px solid var(--purple);
+}
