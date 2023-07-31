@@ -13,6 +13,11 @@ module.exports = function(eleventyConfig) {
         return content
     })
 
+    // iso date shortcode
+    eleventyConfig.addShortcode("iso_date", (date) => {
+        return date.toISOString()
+    })
+
     // get page creation date filter
     eleventyConfig.addFilter("git_created", (page) => {
         console.log(page.inputPath)
