@@ -17,6 +17,7 @@ permalink: blog/atom.xml
       <entry>
         <title>{{ post.data.title }}</title>
         <link href="https://www.nyabla.net{{ post.url }}" />
+        <id>https://www.nyabla.net{{ post.url }}</id>
 
         <published>{% iso_date post.data.dateCreated %}</published>
 
@@ -52,7 +53,7 @@ permalink: blog/atom.xml
 
         <author>
           <name>nela</name>
-          <id>https://www.nyabla.net/</id>
+          <uri>https://www.nyabla.net/</uri>
         </author>
       </entry>
     {% endfor %}
