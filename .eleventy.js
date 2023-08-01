@@ -24,6 +24,10 @@ module.exports = function(eleventyConfig) {
         return DateGitFirstAdded(page.inputPath)
     })
 
+    eleventyConfig.addLiquidFilter("date_equals", (dateA, dateB) => {
+        return dateA.getTime() == dateB.getTime()
+    })
+
     // collection for posts
     eleventyConfig.addCollection('posts', (collectionApi) => {
         return collectionApi.getFilteredByGlob("**/blog/_posts/*.md")

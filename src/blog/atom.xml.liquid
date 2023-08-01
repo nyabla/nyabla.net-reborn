@@ -21,9 +21,9 @@ permalink: blog/atom.xml
 
         <published>{% iso_date post.data.dateCreated %}</published>
 
-        {% if post_git_created != post.date %}
+        {% unless post.data.dateCreated | date_equals: post.date %}
           <updated>{% iso_date post.date %}</updated>
-        {% endif %}
+        {% endunless %}
 
         {% if post.data.summary %}
           <summary>{{ post.data.summary }}</summary>
