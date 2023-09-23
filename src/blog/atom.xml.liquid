@@ -40,7 +40,7 @@ permalink: blog/atom.xml
                 {% for cw in post.data.content_warnings %}
                   <li>{{ cw.brief }}
                     {% if cw.explanation %}
-                      &mdash; {{ cw.explanation }}
+                      — {{ cw.explanation }}
                     {% endif %}
                   </li>
                 {% endfor %}
