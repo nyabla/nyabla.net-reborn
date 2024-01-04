@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets"
+import nelar from '../assets/nelar.png'
+
+const nelaInfo = {
+    name: "nela",
+    pronouns: "they/she",
+    status: "silly :3",
+}
+---
+<div class="not-prose border border-black p-1 box-border flex space-x-2 flex-row items-center">
+    <Image src={nelar} alt="a portrait of nela with cat ears" class="size-40" />
+    <dl class="font-mono flex flex-wrap h-fit flex-row">
+        {Object.entries(nelaInfo).map(([key, value]) =>
+            <>
+                <dt class="font-bold basis-2/5">{key}</dt>
+                <dd class="basis-3/5">{value}</dd>
+            </>
+        )}
+    </dl>
+</div>

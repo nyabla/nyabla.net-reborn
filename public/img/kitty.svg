@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 256 256.00001"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="bitmap.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   sodipodi:docname="kitty.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.9775231"
+     inkscape:cx="173.70214"
+     inkscape:cy="138.30433"
+     inkscape:window-width="1366"
+     inkscape:window-height="699"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path1-6-2"
+       style="fill:#d40055;stroke-width:0.670013"
+       d="M 83.088,12.4593 C 58.2652,41.4932 43.4025,91.1066 44.1945,140.978 45.6852,234.847 95.473,240.199 125.77,238.136 158.498,235.907 209.515,209.9 211.584,166.454 213.578,124.594 208.555,38.7472 185.522,18.4568 164.738,34.3431 136.989,82.4211 127.954,102.809 123.535,85.3128 101.526,37.167 83.088,12.4593 Z"
+       sodipodi:nodetypes="csccccc" />
+    <path
+       id="rect1"
+       style="fill:#ffffff"
+       d="M 91.308596 114.54688 C 90.379596 114.54888 89.42536 114.57028 88.443361 114.61328 C 76.756773 115.12428 59.645417 130.23639 59.416017 145.73438 C 59.186517 161.23336 76.979041 177.13868 90.828127 177.13868 C 104.67761 177.13868 125.52719 158.33037 124.61719 145.73438 C 123.73619 133.53339 120.10577 114.47788 91.308596 114.54688 z M 167.89063 115.0625 C 166.95963 115.0555 166.00349 115.07419 165.02149 115.11719 C 153.3345 115.62719 138.22414 127.84382 137.99414 143.3418 C 137.76514 158.84078 153.55727 175.64258 167.40625 175.64258 C 181.25524 175.64258 202.92758 163.6653 202.01758 151.07032 C 201.13558 138.86833 196.7356 115.2765 167.89063 115.0625 z M 102.49219 122.63281 C 119.25017 122.59081 121.36396 134.26139 121.87696 141.73438 C 122.40595 149.44937 110.27288 160.97266 102.21289 160.97266 C 94.153701 160.97266 83.798042 151.22837 83.931642 141.73438 C 84.065142 132.24139 94.023028 122.98683 100.82422 122.67383 C 101.39522 122.64683 101.95219 122.63381 102.49219 122.63281 z M 179.01172 123.86133 C 179.55172 123.86333 180.10869 123.8783 180.67969 123.9043 C 187.48068 124.2173 197.43632 133.47281 197.57032 142.9668 C 197.70332 152.45979 185.99164 159.18164 177.93164 159.18164 C 169.87265 159.18164 159.07352 150.31851 159.60352 142.60352 C 160.11552 135.12953 162.25174 123.79733 179.01172 123.86133 z " />
+  </g>
+</svg>

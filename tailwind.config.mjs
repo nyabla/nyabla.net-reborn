@@ -1,3 +1,5 @@
+import typography from '@tailwindcss/typography'
+
 const stack = "Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif"
 
 /** @type {import('tailwindcss').Config} */
@@ -24,5 +26,5 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [typography],
 }
