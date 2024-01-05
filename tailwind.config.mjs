@@ -34,6 +34,7 @@ export default {
     plugin(function imageRenderPlugin(api) {
       api.addUtilities({
         ".render-pixels": { "image-rendering": "pixelated" },
+        ".render-auto" : { "image-rendering": "auto" },
       })
     }),
   ],
