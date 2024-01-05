@@ -2,13 +2,12 @@ pkgs: with builtins; let
   inherit (pkgs) lib;
 
   concatCommas = concatStringsSep ",";
-  concatLine = concatStringsSep "\n";
 
-  genFonts = { fonts, charsets, features }: map (genFont { inherit charsets features; }) fonts;
+  genFonts = { fonts, charsets, features }: concatMap (genFont { inherit charsets features; }) fonts;
 
-  genFont = { charsets, features }: font: concatLine (attrValues ( 
+  genFont = { charsets, features }: font: attrValues ( 
     mapAttrs (genCharset { inherit font features; }) charsets 
-  ));
+  );
     
   genCharset = { font, features }: charsetName: charsetUnicodes: ''
     pyftsubset ./web/${font}.woff2 \
