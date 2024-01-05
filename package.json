@@ -8,7 +8,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "font": "cd ./font && nix build && cp result/* ../public/font"
   },
   "dependencies": {
     "@astrojs/mdx": "^2.0.3",
