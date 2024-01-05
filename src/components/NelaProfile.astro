@@ -8,18 +8,18 @@ const nelaInfo = {
     status: "silly :3",
 }
 ---
-<div class="not-prose border border-black p-1 box-border flex space-x-2 flex-row items-center">
-    <div class="size-40 relative flex-grow-0 flex-shrink-0">
+<div class="not-prose border border-black p-1 box-border flex gap-2 md:flex-row items-center flex-col md:w-full w-fit md:mx-0 mx-auto">
+    <div class="md:size-40 size-48 relative flex-grow-0 flex-shrink-0">
         <Image src={nelar} alt="a portrait of nela with cat ears" class="size-full" />
         <img src="/img/sparkle.gif" class="absolute top-3 right-5" alt="">
         <img src="/img/sparkle.gif" class="absolute bottom-2 left-3" alt="">
     </div>
-    <dl class="font-mono flex flex-wrap h-fit flex-row">
+    <table class="font-mono h-fit table-fixed w-max-full">
         {Object.entries(nelaInfo).map(([key, value]) =>
-            <>
-                <dt class="font-bold basis-2/5">{key}</dt>
-                <dd class="basis-3/5">{value}</dd>
-            </>
+            <tr>
+                <th scope="row" class="text-left">{key}</th>
+                <td class="pl-4">{value}</td>
+            </tr>
         )}
     </dl>
 </div>
