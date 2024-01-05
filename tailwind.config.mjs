@@ -1,4 +1,5 @@
 import typography from '@tailwindcss/typography'
+import plugin from 'tailwindcss/plugin'
 
 const stack = "Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif"
 
@@ -26,5 +27,14 @@ export default {
       }
     },
   },
-  plugins: [typography],
+  plugins: [
+    typography,
+
+    // add image-rendering utility
+    plugin(function imageRenderPlugin(api) {
+      api.addUtilities({
+        ".render-pixels": { "image-rendering": "pixelated" },
+      })
+    }),
+  ],
 }
